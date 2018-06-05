@@ -1,0 +1,148 @@
+/* estilos.css */
+*{
+	margin:auto;
+	box-sizing: border-box;
+} 
+li {
+	list-style: none;
+}
+
+/* ----------  HOVER   -------------- */
+
+a:hover{
+	border-radius: 10px;
+	transform: scale(1.2);
+	color:yellow;
+	filter: opacity(1);
+}
+a{
+	transition-property: transform,
+						 border-radius,
+						 filter,
+						 color;
+	transition-duration: 1s,
+						 0s,
+						 1s,
+						 1s;
+	transition-delay: 0s;
+	font-size: 20px;
+	color: white;
+}
+		/*-----------  CABECERA  ------------  */
+header{
+	max-width: 1440px;
+	max-height: 179px;
+	background-image: url("img/header.png");
+}
+
+.cabecera{
+	display: flex;
+}
+.logo{
+	margin-left:50px;
+	max-width: 476px;
+	max-height: 138px;
+}
+.header-botones{
+	display: flex;
+	width: 50%;
+	height: 179px;
+	margin:0;
+	padding:0;
+	justify-content: flex-end;
+	align-items: center;
+}
+.header-botones li{
+	display: flex;
+	height: 89px;
+	width: 226px;
+	margin: 15px 30px;
+	text-align: center;
+	filter: opacity(.87);
+
+}
+.header-botones li a{
+	text-decoration-line: none; 
+	height: 89px;
+	width: 226px;
+	padding-top: 36px;
+	background-image: url("img/header_botones.svg");
+	border-radius: 10px;
+}
+
+		/*-------------  CUERPO  -------------*/
+.contenedor-body{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+
+	margin: 0 55px;
+
+	background-image: url("img/body.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-height: 542px;
+	max-width: 1440px;
+}
+.contenedor-grafico{
+	max-height: 542px;
+	max-width: 100%;
+	padding-left: 150px;
+}
+.botonera-lista{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 0 30px;
+
+	max-height: 542px;
+	max-width: 700px;
+}
+.botonera-lista li{
+	display: flex;
+	width: 226px;
+	height: 89px;
+	margin: 30px 15px;
+	text-align: center;
+	filter: opacity(.85);
+}
+
+.botonera-lista li a{
+	text-decoration-line: none;
+	width: 226px;
+	height: 89px;	
+	padding-top: 35px;
+	background-image: url("img/header_botones.svg");
+	border-radius: 10px;
+}
+
+
+/*  --------- FOOTER --------- */
+
+footer{
+	max-height: 179px;
+	max-width: 1440px;	
+	display: flex;
+}
+
+.footer-redes{
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-redes li a{
+	margin: 10px 10px;
+}
+footer{
+	background-image: url("img/footer.png")
+}
+
+p{
+	color: white;
+	font-size: 25px;
+	font-style: italic;
+	padding: 10px 20px;
+}
+.contenedor-responsabilidad{
+	padding-top:10px;
+}
